@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- hier zet je de code in de head tags -->
+  <title> Lorette - About me </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>De website van Lorette</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="Index.html">HOME</a> </li>
+      <li><a href="About.html">About me</a> </li>
+      <li class="active"><a href="Recept.html">Recept insturen</a></li>
+      <li ><a href="Blog.html">Blog</a> </li>
+      <li ><a href="Contact.html">Contact</a> </li>
+    </ul>
+
+  </nav>
+  <main>
+    <form name="recept" method="POST" data-netlify="true">
+      <h2>Stuur je recept in</h2>
+      <p>
+        <label for="name">Naam: </label><br>
+        <input id="name" type="text" name="name" />
+      </p>
+      <p>
+        <label for="email">E-mail: </label><br>
+        <input id="email" type="email" name="email" />
+      </p>
+      <p>
+        <label for="phone">Telefoon: </label><br>
+        <input id="phone" type="tel" name="phone" />
+      </p>
+      <p>
+        <label for="age">Leeftijd: </label><br>
+        <input id="age" type="number" name="age" />
+      </p>
+      <p>
+        <label>Gender:</label><br>
+        <input id="male" type="radio" name="gender" /><label for="male">man</label>
+        <input id="female" type="radio" name="gender" /><label for="female">vrouw</label>
+        <input id="other" type="radio" name="gender" /><label for="female">anders</label>
+      </p>
+
+      <p>
+        <label>Favoriete cuisine: </label><br>
+        <input type="checkbox" name="frans"><label>frans</label>
+        <input type="checkbox" name="italiaans"><label>italiaans</label>
+        <input type="checkbox" name="spaans"><label>spaans</label>
+        <input type="checkbox" name="arabisch"><label>arabisch</label>
+      </p>
+
+      <p>
+        <label for="color">Kleur schort:</label><br>
+        <input type="color" name="color" />
+      </p>
+      <p>
+        <label for="bio">Biografie: </label><br>
+        <textarea id="bio" rows="5" cols="40" name="message"></textarea>
+      </p>
+      <p>
+        <label for="recipe">Upload uw meest recente recept: </label><br>
+        <input type="file" name="recipe-file" />
+      </p>
+
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+  </main>
+  <footer>
+    <p>Een website voor de Winc-opleiding</p>
+  </footer>
+
+
+</body>
+
+</html>
